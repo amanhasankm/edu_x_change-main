@@ -1,0 +1,47 @@
+.container {
+	min-height: calc(100vh - 80px);
+	background-color: var(--creme);
+}
+
+.inpContainer {
+	display: grid;
+	grid-template-columns: minmax(auto, max-content) minmax(280px, 1fr);
+	gap: 20px;
+	align-items: center;
+}
+
+.markdownContainer {
+	display: flex;
+}
+
+.markdown {
+	flex: 1;
+}
+
+.filesContainer {
+	margin-top: -20px;
+}
+
+.btnContainer {
+	display: flex;
+	justify-content: space-between;
+}
+
+.message {
+	font-weight: 600;
+}
+
+.message[data-type="error"] {
+	color: red;
+}
+
+.message[data-type="success"] {
+	color: green;
+}
+
+@media screen and (max-width: 620px) {
+	.inpContainer {
+		grid-template-columns: auto;
+		gap: 10px;
+	}
+}

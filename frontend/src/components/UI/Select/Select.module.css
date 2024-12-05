@@ -1,0 +1,11 @@
+.select {
+	padding: 8px 12px;
+	font-size: 1rem;
+	cursor: pointer;
+	border-radius: 8px;
+	width: 100%;
+	max-width: 350px;
+	border: 2px solid var(--orange);
+	font-size: 1rem;
+	outline: none;
+}

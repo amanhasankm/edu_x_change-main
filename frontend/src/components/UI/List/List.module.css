@@ -1,0 +1,95 @@
+.container {
+	list-style-type: none;
+	overflow: hidden;
+}
+
+.item {
+	border-bottom: 1px solid var(--black);
+	font-weight: 600;
+	height: 50px;
+	text-overflow: ellipsis;
+	overflow: hidden;
+	white-space: nowrap;
+	cursor: pointer;
+}
+
+.link {
+	color: var(--black) !important;
+	width: 100%;
+	height: 100%;
+}
+
+
+
+.listContainer {
+	width: 100%;
+	list-style-type: none;
+	padding: 12px 8px;
+	border-radius: 8px;
+	scrollbar-width: thin;
+	max-height: 550px;
+	overflow-y: scroll;
+}
+
+.listContainer li {
+	position: relative;
+	display: flex;
+	justify-content: space-between;
+}
+
+.listContainer li::after {
+	content: '';
+	position: absolute;
+	left: 0;
+	right: 0;
+	bottom: 0;
+	height: 1px;
+	background-color: var(--black);
+}
+
+.listContainer::-webkit-scrollbar {
+	width: 6px;
+}
+
+.listContainer::-webkit-scrollbar-thumb {
+	background-color: #817c59;
+	border-radius: 4px;
+}
+
+.list {
+	display: flex;
+	justify-content: space-between;
+	align-items: center;
+	color: var(--black) !important;
+	flex: 1;
+}
+
+.lhs {
+	display: flex;
+	align-items: center;
+}
+
+.icon {
+	border-radius: 50%;
+}
+
+.nameContainer {
+	display: flex;
+	flex-direction: column;
+}
+
+.name {
+	font-size: 1rem;
+	line-height: 1.2rem;
+	font-weight: 500;
+}
+
+.desc {
+	font-size: 0.6rem;
+	line-height: 0.8rem;
+}
+
+.rhs {
+	display: inline-flex;
+	align-items: center;
+}

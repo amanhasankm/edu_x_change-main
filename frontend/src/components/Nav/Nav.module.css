@@ -1,0 +1,42 @@
+.container {
+	position: fixed;
+	top: 0;
+	width: 100%;
+	height: 80px;
+	z-index: 50;
+	background-color: var(--creme);
+}
+
+.wrapper {
+	height: 100%;
+	display: flex;
+	justify-content: space-between;
+	align-items: center;
+}
+
+.searchContainer {
+	width: 33.3%;
+}
+
+.buttons {
+	display: flex;
+	align-items: center;
+}
+
+.iconContainer {
+	display: flex;
+	cursor: pointer;
+	position: relative;
+}
+
+.iconContainer img {
+	border-radius: 50%;
+}
+
+.iconOptions {
+	position: absolute;
+	right: 0;
+	background-color: var(--creme);
+	border-radius: 8px;
+	min-width: 180px;
+}

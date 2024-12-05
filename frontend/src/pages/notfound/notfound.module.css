@@ -1,0 +1,16 @@
+.container {
+	min-height: calc(100vh - 80px);
+	background-color: var(--creme);
+}
+
+.content {
+	min-height: calc(100vh - 80px);
+	display: flex;
+	justify-content: center;
+	align-items: center;
+	flex-direction: column;
+}
+
+.content h1 {
+	font-size: 3rem;
+}

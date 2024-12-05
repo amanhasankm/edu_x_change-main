@@ -1,0 +1,31 @@
+{% load static %} {% spaceless %}
+{% load django_vite %}
+<!DOCTYPE html>
+<html lang="en">
+	<head>
+		<meta charset="UTF-8" />
+		<meta http-equiv="X-UA-Compatible" content="IE=edge" />
+		<meta name="viewport" content="width=device-width, initial-scale=1.0" />
+		<link
+		rel="shortcut icon"
+		href="{% static 'EXC.svg' %}"
+		type="image/x-icon"
+		/>
+		{% vite_hmr_client %}
+		{% comment %} <script>
+			{% include 'js/lib.js' %}
+		</script> {% endcomment %}
+		<style>
+			{% include "css/poppins.css" %}
+			{% include "css/basic.css" %}
+		</style>
+		{% block head %}
+		<title>Edu Xchange</title>
+		{% endblock head %}
+	</head>
+	<body>
+		{% block body %}{% endblock body %}
+		{% block scripts %} {% endblock scripts%}
+	</body>
+</html>
+{% endspaceless %}

@@ -1,0 +1,75 @@
+.container {
+	background-color: var(--creme);
+	width: max-content;
+	max-height: 80vh;
+	border-radius: 8px;
+	position: relative;
+	max-width: 600px;
+}
+
+.fw {
+	width: 100vw;
+}
+
+.pad {
+	padding: 16px 12px;
+}
+
+.heading {
+	padding: 8px 12px;
+	box-shadow: 0px 2px 8px 2px rgba(0, 0, 0, .4);
+	border-bottom: 2px solid var(--blue);
+	border-top-right-radius: 8px;
+	border-top-left-radius: 8px;
+	display: flex;
+	align-items: center;
+	justify-content: space-between;
+	position: relative;
+	z-index: 10;
+}
+
+.heading h2 {
+	display: inline;
+}
+
+.icon {
+	width: 24px;
+	height: 24px;
+	cursor: pointer;
+}
+
+.body {
+	padding: 18px 12px;
+	max-height: 75vh;
+	overflow-y: scroll;
+	scrollbar-width: thin;
+}
+
+.body::-webkit-scrollbar {
+	width: 6px;
+}
+
+.body::-webkit-scrollbar-thumb {
+	background-color: #817c59;
+	border-radius: 4px;
+}
+
+.yellow {
+	background-color: var(--yellow);
+}
+
+.orange {
+	background-color: var(--orange);
+}
+
+.blue {
+	background-color: var(--blue);
+}
+
+.red {
+	background-color: var(--red);
+}
+
+.transp {
+	background-color: transparent;
+}

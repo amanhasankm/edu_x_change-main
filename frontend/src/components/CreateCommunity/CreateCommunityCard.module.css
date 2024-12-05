@@ -1,0 +1,46 @@
+.container {
+	width: 100vw;
+	max-width: 700px;
+	/* overflow-y: hidden; */
+}
+
+.wrapper {
+	display: grid;
+	grid-template-columns: minmax(auto, max-content) minmax(280px, 1fr);
+	gap: 40px;
+	align-items: center;
+}
+
+
+.label {
+	font-weight: 600;
+}
+
+.inp {
+	width: 100%;
+}
+
+.errorMsg {
+	display: block;
+	min-height: 20px;
+	text-align: center;
+}
+
+.errorMsg[data-mode=error] {
+	color: red;
+}
+
+.errorMsg[data-mode=success] {
+	color: green;
+}
+
+@media screen and (max-width: 500px) {
+	.wrapper {
+		grid-template-columns: auto;
+		gap: 10px;
+	}
+
+	.inp {
+		margin-bottom: 30px;
+	}
+}

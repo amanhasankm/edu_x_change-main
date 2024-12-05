@@ -1,0 +1,32 @@
+.container {
+	background-color: var(--white);
+	border-radius: 4px;
+}
+
+.head {
+	display: flex;
+	align-items: center;
+	justify-content: space-between;
+	padding: 8px 16px;
+}
+
+.icon {
+	width: 45px;
+	height: 45px;
+	border-radius: 50%;
+	background-color: var(--red);
+}
+
+.userName {
+	color: var(--yellow);
+	font-weight: 600;
+}
+
+.kebab {
+	cursor: pointer;
+}
+
+.card {
+	width: 100%;
+	max-width: 500px;
+}

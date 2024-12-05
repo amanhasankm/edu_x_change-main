@@ -1,0 +1,8 @@
+.container {
+	background-color: var(--creme);
+	min-height: calc(100vh - 80px);
+}
+
+.main {
+	padding-top: 30px;
+}

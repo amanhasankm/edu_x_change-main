@@ -1,0 +1,104 @@
+.container {
+	min-height: calc(100vh - 80px);
+	background-color: var(--creme);
+}
+
+.profileContainer {
+	display: grid;
+	grid-template-columns: 1fr minmax(200px, 500px);
+	column-gap: 20px;
+}
+
+.avatarContainer {
+	display: inline-flex;
+	flex-direction: column;
+	align-items: center;
+}
+
+.avatarContainer img {
+	border-radius: 50%;
+	border: 4px solid var(--yellow);
+	cursor: pointer;
+}
+
+.inpContainer {
+	display: grid;
+}
+
+.inp {
+	width: min(550px, 100%);
+}
+
+.card {
+	width: 100%;
+}
+
+.listContainer {
+	list-style-type: none;
+}
+
+.listContainer::-webkit-scrollbar {
+	width: 6px;
+}
+
+.listContainer::-webkit-scrollbar-thumb {
+	background-color: #817c59;
+	border-radius: 4px;
+}
+
+.list {
+	display: flex;
+	justify-content: space-between;
+	align-items: center;
+}
+
+.lhs {
+	display: flex;
+	align-items: center;
+	color: var(--black) !important;
+	flex: 1;
+}
+
+.icon {
+	border-radius: 50%;
+}
+
+.nameContainer {
+	display: flex;
+	flex-direction: column;
+}
+
+.name {
+	font-size: 1rem;
+	line-height: 1.2rem;
+	font-weight: 500;
+}
+
+.desc {
+	font-size: 0.6rem;
+	line-height: 0.8rem;
+}
+
+.message {
+	font-weight: 600;
+	min-height: 20px;
+}
+
+.message[data-type='error'] {
+	color: #c90a0a;
+}
+
+.message[data-type='success'] {
+	color: green;
+}
+
+.avatars {
+	display: grid;
+	grid-template-columns: repeat(3, 100px);
+	gap: 40px;
+}
+
+.avatars img {
+	border-radius: 50%;
+	cursor: pointer;
+}

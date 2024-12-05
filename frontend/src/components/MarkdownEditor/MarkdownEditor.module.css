@@ -1,0 +1,46 @@
+.container {
+	background-color: var(--white);
+	border-radius: 4px;
+	min-height: 400px;
+	height: 50vh;
+	max-height: 1080px;
+	box-shadow: 2px 2px 4px 4px rgba(0, 0, 0, .25);
+}
+
+
+.viewerContainer {
+	padding: 18px 16px 28px 16px;
+}
+
+.viewerWrapper {
+	display: flex;
+}
+
+.btn {
+	cursor: pointer;
+	display: flex;
+}
+
+.count {
+	text-align: center;
+	font-weight: 700;
+}
+
+.notesBtnWrapper {
+	display: grid;
+	grid-template-columns: repeat(auto-fit, 160px);
+	grid-auto-flow: dense;
+	grid-gap: 10px;
+}
+
+.notesBtnWrapper a {
+	text-overflow: ellipsis;
+	overflow: hidden;
+	white-space: nowrap;
+	width: 160px;
+
+	background-color: var(--red);
+	color: var(--white);
+	padding: 8px 12px;
+	border-radius: 4px;
+}

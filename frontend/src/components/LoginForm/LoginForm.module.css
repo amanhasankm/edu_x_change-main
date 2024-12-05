@@ -1,0 +1,52 @@
+.container {
+	width: 500px;
+	background-color: var(--blue);
+	border-radius: 8px;
+	padding: 30px 35px;
+	position: relative;
+	overflow: hidden;
+}
+
+
+.heading {
+	text-align: center;
+}
+
+.loginText {
+	margin-bottom: 4px;
+}
+
+.msgField {
+	font-size: 14px;
+	min-height: 10px;
+	text-align: center;
+}
+
+.msgField[data-type=error] {
+	color: #c90a0a;
+}
+
+.msgField[data-type=success] {
+	color: #37c90a;
+}
+
+.submitBtn {
+	width: 100%;
+}
+
+.switchContainer {
+	text-align: center;
+}
+
+.switchBtn {
+	font-size: 1rem;
+}
+
+@media screen and (max-width: 520px) {
+	.container {
+		min-height: 100vh;
+		width: 100vw;
+		border-radius: 0;
+		padding: 30px 3vw;
+	}
+}

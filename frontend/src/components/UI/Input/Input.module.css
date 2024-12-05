@@ -1,0 +1,75 @@
+.container {
+	position: relative;
+	display: inline-block;
+}
+
+.lbl {
+	position: absolute;
+	color: var(--black);
+	opacity: 0.5;
+	pointer-events: none;
+	cursor: none;
+	user-select: none;
+	top: calc(50% - 12px);
+	left: 14px;
+	font-size: 1rem;
+	transition: all 0.2s ease-in-out;
+	width: max-content;
+}
+
+.input:focus+.lbl {
+	top: -22px;
+	opacity: 1;
+}
+
+.input:focus+.lbl.white {
+	top: -22px;
+	opacity: 1;
+	color: var(--white);
+}
+
+.levitate {
+	top: -22px !important;
+	opacity: 1;
+}
+
+.textArea {
+	max-height: 250px;
+	min-height: 45px;
+	font-size: 1rem;
+}
+
+.txtAreaLbl {
+	top: 10px;
+}
+
+.input {
+	width: 100%;
+	padding: 8px 12px;
+	border: 2px solid var(--orange);
+	border-radius: 8px;
+}
+
+.input[data-valid=false] {
+	border-color: red;
+}
+
+.input[data-resize=none] {
+	resize: none;
+}
+
+.input[data-resize=vertical] {
+	resize: vertical;
+}
+
+.input[data-resize=both] {
+	resize: both;
+}
+
+.input[data-resize=horizontal] {
+	resize: horizontal;
+}
+
+.levitate.white {
+	color: var(--white);
+}

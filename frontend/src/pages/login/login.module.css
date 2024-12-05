@@ -1,0 +1,11 @@
+.container {
+	min-height: 100vh;
+	display: flex;
+	justify-content: center;
+	align-items: center;
+	color: var(--white);
+	background-image: url("/static/imgs/doodle.png");
+	background-repeat: no-repeat;
+	background-position: 50% 50%;
+	background-size: cover;
+}

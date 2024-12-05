@@ -1,0 +1,25 @@
+{% extends 'basic.html' %} {% load static %} 
+{% load django_vite %}
+{% block head %}
+<title>{{ comm_name }}</title>
+{% endblock head %}
+{% block body %}
+<div id="root"></div>
+{% endblock body %}
+{% block scripts %}
+	<script>
+		{% if user_data %}
+		const __userData = {
+			'id': {{ user_data.id }},
+			'name': `{{ user_data.name }}`,
+			'username': `{{ user_data.username }}`,
+			'email': `{{ user_data.email }}`,
+			'createdDate': `{{ user_data.createdDate }}`,
+			'isActive': {% if user_data.is_active %}true{% else %}false{% endif %},
+			'isSuperuser': {% if user_data.is_superuser %}true{% else %}false{% endif %},
+			'isStaff': {% if user_data.is_staff %}true{% else %}false{% endif %}
+		}
+		{% endif %}
+	</script>
+	{% vite_asset 'pages/notfound/notfound.tsx' %}
+{% endblock scripts %}

@@ -1,0 +1,37 @@
+# Django stuff
+*.log
+*.pot
+*.pyc
+__pycache__/
+local_settings.py
+db.sqlite3
+
+# Static files
+# /staticfiles/
+# /media/
+
+# Environments
+.env
+.venv
+env/
+djangoenv/
+venv/
+ENV/
+
+# IDEs and editors
+.idea/
+.vscode/
+*.sublime-project
+*.sublime-workspace
+
+# Other
+*.DS_Store
+*.swp
+*.swo
+
+# Frontend
+node_modules/
+
+userassets/
+dist/
+static_root/

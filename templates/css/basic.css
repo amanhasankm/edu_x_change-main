@@ -1,0 +1,205 @@
+:root {
+	--creme: #EAE2B7;
+	--red: #D62828;
+	--blue: #003049;
+	--orange: #F77F00;
+	--yellow: #FCBF49;
+	--white: #FFFFFF;
+	--black: #000000;
+	--link: #00aeff;
+}
+
+* {
+	padding: 0;
+	margin: 0;
+	box-sizing: border-box;
+	font-family: 'Poppins', sans-serif;
+}
+
+body {
+	min-height: 100vh;
+	z-index: 1;
+}
+
+.container {
+	padding-left: 5vw;
+	padding-right: 5vw;
+	margin: auto;
+	max-width: calc(1440px + 5vw);
+}
+
+.main {
+	position: relative;
+	top: 80px;
+	/* background-color: var(--creme); */
+}
+
+.pad {
+	padding-top: 30px;
+	/* padding-bottom: 80px; */
+}
+
+.flx-c {
+	display: flex;
+	justify-content: center;
+	align-items: center;
+}
+
+.lite-shadow {
+	box-shadow: 2px 2px 4px 4px rgba(0, 0, 0, 0.25);
+}
+
+input {
+	outline: none;
+	border-radius: 6px;
+	font-size: 1rem;
+}
+
+textarea {
+	outline: none;
+}
+
+a {
+	text-decoration: none;
+	color: var(--link);
+}
+
+.underline {
+	position: relative;
+}
+
+.underline::after {
+	content: "";
+	position: absolute;
+	bottom: 0;
+	right: 0;
+	display: inline-block;
+	height: 1px;
+	width: 100%;
+	background-color: var(--link);
+	transition: width 0.2s ease-in-out;
+}
+
+.underline:hover::after {
+	width: 0;
+	left: 0;
+}
+
+
+a:visited {
+	color: var(--link);
+}
+
+.drop-shadow {
+	box-shadow: 4px 8px 8px 8px rgba(0, 0, 0, 0.5);
+}
+
+#portal .portal-container {
+	position: fixed;
+	display: flex;
+	justify-content: center;
+	inset: 0;
+	width: 100vw;
+	height: 100vh;
+	z-index: 100;
+	overflow: hidden;
+	align-items: center;
+}
+
+#portal .backdrop {
+	position: fixed;
+	inset: 0;
+	color: #fff;
+	background-color: #000000ab;
+	z-index: -1;
+}
+
+.fw {
+	width: 100%;
+}
+
+
+/* Margins */
+.ma {
+	margin: auto;
+}
+
+.mt-5 {
+	margin-top: 5px;
+}
+
+.mr-5 {
+	margin-right: 5px;
+}
+
+.mb-5 {
+	margin-bottom: 5px;
+}
+
+.ml-5 {
+	margin-left: 5px;
+}
+
+.mt-10 {
+	margin-top: 10px;
+}
+
+.mt-20 {
+	margin-top: 20px;
+}
+
+.mt-30 {
+	margin-top: 30px;
+}
+
+.mt-40 {
+	margin-top: 40px;
+}
+
+.mr-10 {
+	margin-right: 10px;
+}
+
+.mr-20 {
+	margin-right: 20px;
+}
+
+.mr-30 {
+	margin-right: 30px;
+}
+
+.mr-40 {
+	margin-right: 40px;
+}
+
+.mb-10 {
+	margin-bottom: 10px;
+}
+
+.mb-20 {
+	margin-bottom: 20px;
+}
+
+.mb-30 {
+	margin-bottom: 30px;
+}
+
+.mb-40 {
+	margin-bottom: 40px;
+}
+
+.ml-10 {
+	margin-left: 10px;
+}
+
+.ml-20 {
+	margin-left: 20px;
+}
+
+.ml-30 {
+	margin-left: 30px;
+}
+
+.ml-40 {
+	margin-left: 40px;
+}

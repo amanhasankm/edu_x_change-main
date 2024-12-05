@@ -1,0 +1,61 @@
+.btn {
+	border: none;
+	border-radius: 4px;
+	cursor: pointer;
+	font-weight: 700;
+	background-color: var(--blue);
+	color: var(--white);
+	user-select: none;
+	box-shadow: 2px 2px 4px 4px rgba(0, 0, 0, 0.25);
+	text-align: center;
+	display: inline-flex;
+	justify-content: center;
+	align-items: center;
+	position: relative;
+}
+
+.pad {
+	padding: 8px 12px;
+}
+
+.btn:disabled {
+	filter: grayscale(1);
+	cursor: default;
+}
+
+.yellow {
+	background-color: var(--yellow);
+	color: var(--black)
+}
+
+.orange {
+	background-color: var(--orange);
+}
+
+.red {
+	background-color: var(--red);
+}
+
+.transp {
+	background-color: transparent;
+	color: var(--orange);
+	box-shadow: none;
+}
+
+.large {
+	font-size: 1.2rem;
+	padding: 10px 16px;
+	border-radius: 6px;
+}
+
+.noShadow {
+	box-shadow: none;
+}
+
+.spinner {
+	position: absolute;
+}
+
+.hide {
+	opacity: 0;
+}

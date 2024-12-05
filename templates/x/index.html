@@ -1,0 +1,22 @@
+{% extends 'basic.html' %} {% load static %} 
+{% load django_vite %}
+{% block head %}
+<title>x/</title>
+{% endblock head %}
+{% block body %}
+<div id="root"></div>
+{% endblock body %}
+{% block scripts %}
+	<script>
+		{% if comm_data %}
+		const __communityData = {{ comm_data|safe }}
+		{% endif %}
+
+		{% if user_data %}
+		const __userData = {{ user_data|safe }}
+		{% endif %}
+	</script>
+
+
+	{% vite_asset 'pages/x/x.tsx' %}
+{% endblock scripts %}
